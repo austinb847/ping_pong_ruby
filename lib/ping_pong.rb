@@ -7,7 +7,9 @@ class Integer
     ping_pongs = []
     range.each() do |number|
       if (number.%(3).eql?(0))
-          ping_pongs.push("ping")
+        ping_pongs.push("ping")
+      elsif (number.%(5).eql?(0))
+        ping_pongs.push("pong")
       else
         ping_pongs.push(number)
       end

@@ -8,7 +8,7 @@ describe('Integer#ping_pong') do
   end
 
   it("adds ping to the array if the number is divisible 3") do
-    expect(5.ping_pong).to eq([1,2,"ping",4,5])
+    expect(4.ping_pong).to eq([1,2,"ping",4])
   end
 
   it("adds pong to the array if the number is divisible by 5") do
