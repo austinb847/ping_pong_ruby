@@ -6,7 +6,9 @@ class Integer
     range = (1..num_to_count_to)
     ping_pongs = []
     range.each() do |number|
-      if (number.%(3).eql?(0))
+      if (number.%(3).eql?(0)) & (number.%(5).eql?(0))
+        ping_pongs.push("ping pong")
+      elsif (number.%(3).eql?(0))
         ping_pongs.push("ping")
       elsif (number.%(5).eql?(0))
         ping_pongs.push("pong")
